@@ -18,8 +18,8 @@ class QuestionsSeeder extends Seeder
 			'created_at' => $myTime, 
 		];
 		// Simple Queries
-		// $this->db->query("INSERT INTO avquestions (name, priority_id, category_id, updated_at, created_at) VALUES(:name:, :priority_id:, :category_id:, :updated_at:, :created_at:)", $data);
+		// $this->db->query("INSERT INTO questions (name, priority_id, category_id, updated_at, created_at) VALUES(:name:, :priority_id:, :category_id:, :updated_at:, :created_at:)", $data);
 		// Using Query Builder
-		$this->db->table('avquestions')->insert($data);
+		$this->db->table('questions')->insert($data);
 	}
 }
