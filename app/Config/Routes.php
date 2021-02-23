@@ -34,6 +34,7 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->get('/api/questions', 'QuestionsController::index');
+$routes->get('/api/metadata', 'MetadataController::index');
 
 /*
  * --------------------------------------------------------------------
